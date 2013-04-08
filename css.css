@@ -1,0 +1,362 @@
+@media all {
+
+	#nav {
+		max-width:100%;
+		height:177px;
+		display:block;
+	}
+	
+    /* ------------------------------------- Level 1 Grundeinstellung -------------------------------------- */
+	.dropdown {
+		width:100%;
+		position:absolute;
+		z-index:100;
+	}
+	.lt-ie8 .dropdown{margin-top:120px;}
+	.dropdown ul,
+	div#drillmenu{
+		display:inline;
+		float:left;
+		padding:0;
+		margin:0;
+	}
+	.dropdown ul li,
+	.dropdown div p{
+		display:inline;
+		float:left;
+		position:relative;
+		list-style-type:none;
+		padding:0;
+		margin:0;
+	}
+	.dropdown ul li a,
+	.dropdown div p a {
+		display:block;
+		width:auto;
+		text-decoration:none;
+	}
+	.dropdown ul li a:focus,
+	.dropdown ul li a:hover,
+	.dropdown ul li a:active,
+	.dropdown ul li.cur a,
+	.dropdown ul li.act a,
+	.dropdown div p a:focus,
+	.dropdown div p a:hover,
+	.dropdown div p a:active,
+	.dropdown div p.cur a,
+	.dropdown div p.act a {outline: 0 none;}
+	
+	/* ------------------------------------- Level 2 Grundeinstellung -------------------------------------- */
+	
+	.dropdown ul ul,
+	div#drillmenu div {
+		display:none;
+		position:absolute;
+		left:0px;
+		z-index:101;
+	}
+	.dropdown li li a,
+	.dropdown p p a {display:inline-block;}	
+	
+	/* ------------------------------------- Level 3 Grundeinstellung -------------------------------------- */
+	
+	.dropdown ul ul ul,
+	div#drillmenu div div {
+		position:absolute;
+		z-index:102;
+	}
+	.lt-ie8 .ym-hlist ul ul ul {left:191px;}
+	
+	.use-hover .dropdown li:hover ul {display:block;}
+	.use-hover .dropdown li:hover ul ul {display:none;}
+	.use-hover .dropdown li li:hover ul {display:block;}
+	
+	/* ---------------------------------------- Projektanpassung ------------------------------------------ */
+	/* ---------------------------------------- Projektanpassung ------------------------------------------ */
+	/* ---------------------------------------- Projektanpassung ------------------------------------------ */
+	
+	nav#nav, 
+	.lt-ie9 .use-hover{
+		width:100%;
+		height:157px;
+		overflow:visible;
+		position:relativ;
+	}
+	nav#nav > div{position:relative;}
+	
+	/* ------------------------------------- Level1 Projektanpassung -------------------------------------- */
+	
+	.dropdown {
+		line-height:1em;
+		font-size: 1em;
+		left:25%;
+		top:-2px;
+		height:40px;
+		width:65%;
+	}
+
+	.dropdown ul li a,
+	.dropdown div p a{
+		background:transparent;
+		color:#ffffff;
+		padding: 8px;
+		font-weight:normal;	
+		border:none;
+		line-height:20px;
+	}
+
+	.dropdown li:hover a,
+	.dropdown p:hover a {
+		color: #714947;
+		background-color:#ffffff;
+		border-top-width: 1px;
+		border-top-style: solid;
+		border-top-color: #714947;
+		border-left-width: 1px;
+		border-left-style: solid;
+		border-left-color: #714947;
+		border-right-width: 1px;
+		border-right-style: solid;
+		border-right-color: #714947;
+		padding: 8px 7px;
+	}
+
+	.dropdown ul li.cur > a,
+	.dropdown ul li.act > a,
+	.dropdown div p.cur > a,
+	.dropdown div p.act > a{font-weight:bold;}
+	
+	 /* ------------------------------------- Level 2 Projektanpassung -------------------------------------- */
+	
+	.dropdown ul ul,
+	div#drillmenu div {
+		left:0;
+		top:36px;
+		border-left-width: 1px;
+		border-left-style: solid;
+		border-left-color: #714947;
+		border-right-width: 1px;
+		border-right-style: solid;
+		border-right-color: #714947;
+	}		
+	.dropdown li li a,
+	.dropdown li:hover li a,
+	.dropdown p p a,
+	.dropdown p:hover p a{
+		color:#714947;
+		background-color:#FFFFFF;
+		background-image: none;
+		width:177px;
+		margin:0;
+		padding:3px 7px;
+		line-height:20px;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-color: #714947;
+		border-top-width: 0;
+		border-top-style: none;
+		border-left-width: 0px;
+		border-left-style: none;
+		border-right-width: 0px;
+		border-right-style: none; 
+	}
+	.dropdown li li a:hover,
+	.dropdown p p a:hover{
+		background-color:#BADBFC;
+		color:#5C3A38;
+		border-top-width: 0px; 
+		border-top-width: 0px; 
+		border-top-style: none;
+	}
+	
+	.dropdown li li.cur > a,
+	.dropdown p p.cur > a{font-weight:bold;background-color:#F5E4DD;}
+	
+	/* ------------------------------------- Level 3 Projektanpassung -------------------------------------- */
+	
+	.dropdown ul ul ul,
+	div#drillmenu div div {
+		left:177px;
+		top:1px;
+		border-top-width: 1px;
+		border-top-style: solid;
+		border-top-color: #714947;
+		padding-top:0;
+		-webkit-box-shadow: 0px 4px 4px 2px 999999;
+		-moz-box-shadow: 0px 4px 4px 2px 999999;
+		box-shadow: 0px 4px 4px 2px 999999; 
+	}
+	.dropdown li li li a,
+	.dropdown li:hover li li a,
+	.dropdown p p p a,
+	.dropdown p:hover p p a{
+		padding:1px 7px;
+	}
+	.dropdown li li li.cur a,
+	.dropdown p p p.cur a{font-weight:bold;background-color:#E6F5FC;}
+}
+
+@media screen and ( max-width: 830px) {
+
+ 	nav#nav, 
+	.lt-ie9 .use-hover{height:36px; position:relative;}
+  
+  #nav .mobilnavi{
+		width:100%;
+		height:36px;
+		position:absolute;
+		top:0px;
+		left:0px;
+		z-index:105;
+		text-align:center;
+		line-height:36px;
+		font-size:1.3em;
+		color:#FAF2EF;
+		cursor:pointer;
+	}
+	#nav .mobilnavi > div{position:relativ;}
+	#nav .dropdown{
+		position:absolute;
+		border-bottom:1px solid #704845;
+		top:36px;
+		left:0px;
+		width:100%;
+		height:440px;
+		z-index:99;
+		background-color: rgba(112, 72, 69, 0.66);
+	}
+	#menu_wrap {
+		position:relative;
+		margin:0 auto;				
+		width:234px;
+		height:100%;
+		border-left:1px solid #704845;
+		border-right:1px solid #704845;
+		overflow-x:hidden;
+		overflow-y:auto;
+		background-color:#FFFFFF;
+	}
+	
+	/* ------------------------------------- Level 1 Projektanpassung -------------------------------------- */
+	div#menu_wrap div {
+		position:absolute;
+		width:234px;
+	}
+	div#menu_wrap #drillmenu div{
+		left:234px;
+		top:0;
+		display:none;
+	}
+	div#menu_wrap span {
+		height:100%;
+		overflow-x:hidden;
+		overflow-y:auto;
+	}
+	div#menu_wrap p{
+		border-bottom:1px solid #704845;
+		width:100%;
+		position:static;
+	}
+	/* löscht die einstellungen des drobdownmenüs */
+	.dropdown p:hover a {
+		border-top-width: 0px;
+		border-top-style: none;
+		border-left-width: 0px;
+		border-left-style: none;
+		border-right-width: 0px;
+		border-right-style: none;
+	}
+	div#menu_wrap a {
+		color:#704845;
+		outline:none;
+		width:71%;
+		min-height:23px;
+		line-height:23px;
+	  	padding:3px 2%;
+		display:block;
+		text-decoration:none;
+		overflow-x:hidden;
+	}
+	div#menu_wrap a:hover,
+	div#menu_wrap a:focus{background-color:#BDDCFC;}
+  
+  /* ------------------------------------- Level 2 Projektanpassung -------------------------------------- */
+	
+	div#drillmenu div {
+		left:0;
+		top:36px;
+		border-left-width: 0px;
+		border-left-style: none;
+		border-right-width: 0px;
+		border-right-style: none;
+		padding-top:0px;
+	}		
+
+	.dropdown p:hover p a{
+		width:100%;
+		padding:3px 2%;
+		line-height:23px;
+		border-bottom-width: 0px;
+		border-bottom-style: none;
+	}
+	.dropdown p p a{
+		border-bottom-width: 0px;
+		border-bottom-style: none;
+	}
+	.dropdown p p a:hover{
+		background-color:#F5E4DD;
+		color:#704845;
+	}
+	
+	.dropdown p p.cur > a{font-weight:bold;background-color:#F5E4DD;}
+  
+  div#drillmenu div div {
+		padding-top:0px;
+	}
+	p.act .backlink{border-bottom-width:0px;}	
+	
+	/* +++++++++++++++  Vorwärts und Zurück Links des Drillmenü  +++++++++++++++ */
+	
+	div#menu_wrap .backlink a.back {width:96%;}		
+	span.forward{
+		width:24%; 
+		height:100%; 
+		float:right; 
+		display:block; 
+		cursor:pointer; 
+		text-align:center; 
+		padding:3px 0 9px 0;
+		border-left: 1px solid #704845;
+	}
+	
+	div#menu_wrap .backlink a,
+	span.forward{
+	background: #f9f4f2; /* Old browsers */
+		background: -moz-linear-gradient(top, #E0EDF9 0%, #BDDCFC 48%, #92C7FC 51%, #BDDCFC 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E0EDF9), color-stop(48%,#BDDCFC), color-stop(51%,#92C7FC), color-stop(100%,#BDDCFC)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #E0EDF9 0%,#BDDCFC 48%,#92C7FC 51%,#BDDCFC 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #E0EDF9 0%,#BDDCFC 48%,#92C7FC 51%,#BDDCFC 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #E0EDF9 0%,#BDDCFC 48%,#92C7FC 51%,#BDDCFC 100%); /* IE10+ */
+		background: linear-gradient(top, #E0EDF9 0%,#BDDCFC 48%,#92C7FC 51%,#BDDCFC 100%); /* W3C */
+	}
+	div#menu_wrap .backlink a:hover,
+	span.forward:hover{
+		background: #F5E4DD; /* Old browsers */
+		background: -moz-linear-gradient(top, #BDDCFC 0%, #92C7FC 48%, #3399FF 52%, #92C7FC 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#92C7FC), color-stop(48%,#92C7FC), color-stop(52%,#92C7FC), color-stop(100%,#92C7FC)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #BDDCFC 0%,#92C7FC 48%,#3399FF 52%,#92C7FC 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #BDDCFC 0%,#92C7FC 48%,#3399FF 52%,#92C7FC 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #BDDCFC 0%,#92C7FC 48%,#3399FF 52%,#92C7FC 100%); /* IE10+ */
+		background: linear-gradient(top, #BDDCFC 0%,#92C7FC 48%,#3399FF 52%,#92C7FC 100%); /* W3C */
+	}
+	
+	div#menu_wrap p.fwd-hidden > span.forward{display:none;}
+	
+	a.select {
+		color:#FFFFFF;
+		background-color:#999999;
+	}
+	
+	/* ------------------------------------- Level 3 Projektanpassung -------------------------------------- */
+
+}
