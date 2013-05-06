@@ -1,4 +1,10 @@
-
+/*
+ * ResponsivDropdown
+ *
+ * Copyright (c) 2012  Sven Samesch, http://www.sven.samesch.de
+ * Licensed under the MIT license.
+ * https://github.com/svensamesch/responsivDropdown/blob/master/MIT-LICENSE.txt
+ */
 
 (function($) {
     $.fn.responsivDropdown = function(options) {
